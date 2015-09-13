@@ -43,4 +43,4 @@ ggplot() +
         #position=position_identity()
         position=position_jitter(width=0.3, height=0)
   )
->>>>>>> 74f44b56cfc8971b763651cdc7e7c1cdcc6373b4
+
