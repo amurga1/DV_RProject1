@@ -3,7 +3,13 @@ title: "Analysis.Rdm"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is the documented steps we took to finish this project. The data used was taken from Titanic data and using the following SQL query. It basically takes all the data, hence the '*', where the sex variable is not null. Some graphs have variations of this initial query, but they all take the data from the Titanic table. 
+
+'''{r}
+df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic where sex is not null and AGE <= 10"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs347_professor', PASS='orcl_professor', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
+'''
+
+1. The first step we took was to re create the first graph shown in 
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
