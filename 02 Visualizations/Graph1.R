@@ -3,10 +3,10 @@ require("RCurl")
 
 #Graph 1
 # Change the USER and PASS below to be your UTEid
-df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs347_professor', PASS='orcl_professor', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
-df
-summary(df)
-head(df)
+df1 <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl', USER='C##cs347_professor', PASS='orcl_professor', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
+df1
+summary(df1)
+head(df1)
 require(extrafont)
 ggplot() + 
   coord_cartesian() + 
@@ -15,7 +15,7 @@ ggplot() +
   #facet_grid(PCLASS~SURVIVED) +
   labs(title='Titanic') +
   labs(x="Age", y=paste("Fare")) +
-  layer(data=df, 
+  layer(data=df1, 
         mapping=aes(x=as.numeric(as.character(AGE)), y=as.numeric(as.character(FARE)), color=SEX), 
         stat="identity", 
         stat_params=list(), 
