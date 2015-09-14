@@ -10,6 +10,8 @@ Here is a summary of the data we used:
 summary(Titanic)
 ```
 
+
+
 ##Graph 1
 In the first plot, what surprised us the most was that there were only 3 people who paid more than $500.00 per ticket. Apart from that, it is noticeable that there was a majority of men in the ship and that most of the passengers bought low prices fares. 
 ![](Graph1.png)
@@ -34,6 +36,6 @@ This table displays the data of kids, with ages less than or equal to 10. More k
 ![](./Graph5.png)
 
 ##Graph 6
-Finally we conclude with the graph we decided to create. This graph displays the number of passengers per class making the distinction between males and females. It shows that there were significantly more males from class 3 than from lower classes, while the distribution of females was more equal among classes. 
+Finally, we conclude with the graph we decided to create. This graph displays the number of passengers per class making the distinction between males and females. It shows that there were significantly more males from class 3 than from lower classes, while the distribution of females was more equal among classes. 
 
 ![](./Graph6.png)
