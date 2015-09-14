@@ -3,22 +3,32 @@ title: "Project 1"
 output: html_document
 ---
 Group Members: Aura Maria Salazar, Adriana Murga 
+
 This is the documented steps we took to finish this project. The data used was taken from Titanic data and using the following SQL query. It basically takes all the data, hence the '*', where the sex variable is not null. Some graphs have variations of this initial query, but they all take the data from the Titanic table. 
 
-1. The first step we took was to re create the first graph shown in 
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-![](./Users/adrimurga/DataVisualization/DV_RProject1Graph1.png)
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
+Here is a summary of the data we used: 
 ```{r, echo=FALSE}
-plot(cars)
+summary(Titanic)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+1. In the first plot, what surprised us was that here were only 3 people who paid por than $500.00 per ticket. 
+![](Graph1.png)
+
+2. In the second plot we saw that females tended to pay a higher fare than males, although the highest fare was paid by males. 
+![](./Graph2.png)
+
+3. In the third plot we can see that more males died, this was probably due to the fact that they were saving women first. Interestingly you can also see that the people who paid above $500 regardless of gender survived. 
+
+![](./Graph3.png)
+
+4. In this plot, it is easier to see who survived per class. We can see how there wasn't much of a variation between males' survival accross classes, very few males regardless of the class survived. However, we can see how almost every women in class 1 survived, while women in lower classes had less chances.
+
+![](./Graph4.png)
+
+5. This table displays the data of kids, ages less or equal to 10. More kids from lower classes died, and there doesn't seem to be a difference among sex. We can see how the only female from class 1 did not survive. 
+
+![](./Graph5.png)
+
+6. This was the graph we chose to create. It displays the number of passengers per class making the distinction between males and females. It shows that there were significantly more males traveling in class 3 than in class 1 and 2, while the distribution of females was more equal amongst classes. 
+
+![](./Graph6.png)
