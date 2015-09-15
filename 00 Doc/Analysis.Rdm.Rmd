@@ -11,6 +11,9 @@ Here is a summary of the data we used:
 source("../01 Data/DataFrame.R", echo = TRUE)
 
 ```
+```{r}
+head(df1)
+```
 
 ##The Steps 
 The steps we took followed the guidelines required for this project. 
