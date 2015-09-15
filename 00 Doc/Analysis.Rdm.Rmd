@@ -8,6 +8,7 @@ The purpose of this document is to show the steps we took to finish this project
 Here is a summary of the data we used: 
 ```{r, echo=FALSE}
 summary(Titanic)
+load(df1)
 ```
 
 
