@@ -6,11 +6,10 @@ _Group Members: Aura Maria Salazar, Adriana Murga_
 
 The purpose of this document is to show the steps we took to finish this project. The data used was taken from Titanic data which provides information about the survival of the passengers of the Titanic according to their class, sex and age.  
 Here is a summary of the data we used: 
-```{r, echo=FALSE}
-summary(Titanic)
-load(df1)
-```
+```{r}
+source("../01 Data/DataFrame.R", echo = TRUE)
 
+```
 
 
 ##Graph 1
