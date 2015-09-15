@@ -11,9 +11,7 @@ Here is a summary of the data we used:
 source("../01 Data/DataFrame.R", echo = TRUE)
 
 ```
-```{r}
-head(df1)
-```
+
 
 ##The Steps 
 The steps we took followed the guidelines required for this project. 
@@ -26,7 +24,7 @@ The steps we took followed the guidelines required for this project.
 
 4. Created the following structure in the RStudio DV_RProject1 Project:
       - 00 Doc - This folder contains the .Rmd file and some images we imported to show the graphs we made. 
-      - 01 Data - This folder contains the general data freame we used in our project
+      - 01 Data - This folder contains the general data frame we used in our project
       - 02 Visualizations - This folder contains the .R scripts with the different graphs
       
 5. Wrote the R scripts with the necessary SQL query adjustments to produce the graphs asked by professor Cannata. All of these scripts can be found under the Visualization folder of our repository. They show the R and SQL used to produce each graph. 
@@ -38,28 +36,41 @@ The steps we took followed the guidelines required for this project.
 
 ###Graph 1
 In the first plot, what surprised us the most was that there were only 3 people who paid more than $500.00 per ticket. Apart from that, it is noticeable that there was a majority of men in the ship and that most of the passengers bought low prices fares. 
-![](Graph1.png)
+
+```{r}
+source("../02 Visualizations/Graph1.R", echo = TRUE)
+```
 
 ###Graph 2
 Unlike the previous graph, in this graph we cleaned the data and corrected it so that it displayed only the passengers whose sex was documented. Our SQL query selected the titanic data where sex was not null. In this second plot we see once again that females tended to pay a higher fare than males.Also, it shows that most passengers were around their 20's to 40's, and surprisingly there were more young passengers than elderly. Passengers with ages greater than aroun 65 were all men. 
-![](./Graph2.png)
+```{r}
+source("../02 Visualizations/Graph2.R", echo = TRUE)
+```
 
 ###Graph 3
 In this third plot we can see that more males died, this was probably due to the fact that they were saving women first. Interestingly you can also see that the people who paid above $500 survived, regardless of gender. 
 
-![](./Graph3.png)
+```{r}
+source("../02 Visualizations/Graph3.R", echo = TRUE)
+```
 
 ###Graph 4
 In this plot, it is easier to see who survived given their social status (class). We can see how there wasn't much of a variation between males' survival accross classes, very few males regardless of the class survived. However, we can see how almost every women in class 1 survived, while women in lower classes had tougher fate.
 
-![](./Graph4.png)
+```{r}
+source("../02 Visualizations/Graph4.R", echo = TRUE)
+```
 
 ### Graph 5
 This table displays the data of kids, with ages less than or equal to 10. More kids from lower classes died, and there doesn't seem to be a difference among sex. 
 
-![](./Graph5.png)
+```{r}
+source("../02 Visualizations/Graph5.R", echo = TRUE)
+```
 
 ###Graph 6
 Finally, we conclude with the graph we decided to create. This graph displays the number of passengers per class making the distinction between males and females. It shows that there were significantly more males from class 3 than from lower classes, while the distribution of females was more equal among classes. 
 
-![](./Graph6.png)
+```{r}
+source("../02 Visualizations/Graph6.R", echo = TRUE)
+```

@@ -1,14 +1,12 @@
-require("jsonlite")
 require("ggplot2")
+require("jsonlite")
 require("RCurl")
+require("extrafont")
 
 #Graph 1
 # Change the USER and PASS below to be your UTEid
 df1 <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic where sex is not null"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_alm3657', PASS='orcl_alm3657', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
-df1
-summary(df1)
-head(df1)
-require(extrafont)
+
 ggplot() + 
   coord_cartesian() + 
   scale_x_continuous() +
