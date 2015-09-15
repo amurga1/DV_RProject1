@@ -1,4 +1,5 @@
 require("jsonlite")
+require("ggplot2")
 require("RCurl")
 
 #Graph 1
