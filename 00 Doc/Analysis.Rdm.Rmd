@@ -4,14 +4,38 @@ output: html_document
 ---
 _Group Members: Aura Maria Salazar, Adriana Murga_
 
-The purpose of this document is to show the steps we took to finish this project. The data used was taken from Titanic data which provides information about the survival of the passengers of the Titanic according to their class, sex and age.  
+The purpose of this document is to show the steps we took to finish this project. The data used was taken from Titanic data which provides information about the survival of the passengers of the Titanic according to their class, sex and age.
+
+The very first step in order to load our project is to install the necessary packages which are ggplot2, jsonlite, extrafont, and Rcurl. 
+
+```{r, echo = TRUE}
+source("../01 Data/Packages.R")
+```
+
+After this is done the next step is to create the data frames for each graph. 
+
+```{r}
+source("../01 Data/DataGraph1.R")
+source("../01 Data/DataGraph2.R")
+source("../01 Data/DataGraph3.R")
+source("../01 Data/DataGraph4.R")
+source("../01 Data/DataGraph5.R")
+source("../01 Data/DataGraph6.R")
+```
+
 Here is a summary of the data we used:
 
 ```{r}
-source("../01 Data/DataFrame.R", echo = TRUE)
+source("../01 Data/DataSummary.R", echo = FALSE)
 
 ```
 
+All of the data from our graph was taken form an oracle data base. Even though the SQL query changed in some instances in order to take specific data it was all pretty similar. 
+
+The general SQL query for the data we used was the following:
+```{r}
+source("../01 Data/DataGraph1.R")
+```
 
 ##The Steps 
 The steps we took followed the guidelines required for this project. 
@@ -30,7 +54,6 @@ The steps we took followed the guidelines required for this project.
 5. Wrote the R scripts with the necessary SQL query adjustments to produce the graphs asked by professor Cannata. All of these scripts can be found under the Visualization folder of our repository. They show the R and SQL used to produce each graph. 
 
 6. Created a knitr document to show all the steps we took to make this project and display our findings. In this document we included a summary of the Titanic data frame (as seen at the top of the document), as well as the images of the plots we were asked to make. Such plots can be found below. 
-
 
 ## The Graphs
 
